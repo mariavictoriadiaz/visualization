@@ -1,0 +1,35 @@
+<html>
+<head>
+    <div id="global_div" style="width: 1080px; height: 180px;"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js?sensor=false&callback=initialize"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?sensor=false"></script>
+    <script type="text/javascript" src="../js/colors.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawGlobal);
+
+    var font_name= 'Times New Roman'
+    
+    function drawGlobal() {
+      var gdata = google.visualization.arrayToDataTable(global);
+
+      var options = {
+        legend: { position: 'bottom', maxLines: 4, textStyle: { color: 'black',  fontName: 'Times New Roman',  fontSize: 16 } },
+        colors:[color_green,color_yellow,color_red],
+        bar: {groupWidth: "90%"},
+        chartArea: {'width': '90%', 'height': '30%'},
+        vAxis: {textStyle: { color: 'black',  fontName: 'Times New Roman',  fontSize: 12,  bold: false,  italic: true }},        
+        hAxis: {textStyle: { color: 'black',  fontName: 'Times New Roman',  fontSize: 12,  bold: false,  italic: true },
+                viewWindow: {max: 100},
+                title:'Proportion of species (%)', 
+                titleTextStyle: { color: 'black',  fontName: 'Times New Roman',  fontSize: 16,  bold: false,  italic: true }},        
+        
+        isStacked: 'true'
+       };
+       
+      var chart = new google.visualization.BarChart(document.getElementById('global_div'));
+      chart.draw(gdata, options);
+    }
+</script>
+</html>

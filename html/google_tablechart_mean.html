@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js?sensor=false&callback=initialize"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?sensor=false"></script>
+    <script type="text/javascript" src="../js/colors.js"></script>
+    <script type="text/javascript" src="../js/google_table_summary.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['table'] });
+
+        var font_name = 'Verdana';
+        var font_size = 12;
+        var number_format = '##0.0';
+
+        var cssClassNames = {
+            'headerRow': '',
+            'tableRow': '',
+            'oddTableRow': 'beige-background',
+            'selectedTableRow': 'orange-background large-font',
+            'hoverTableRow': '',
+            'headerCell': 'gold-border',
+            'tableCell': '',
+            'rowNumberCell': 'underline-blue-font'
+        };
+        var tableOptions = {
+            allowHtml: true,
+            page: 'enabled',
+            pageSize: 10,
+            width: '90%',
+            'cssClassNames': cssClassNames
+        };
+
+
+        google.charts.setOnLoadCallback(drawCountriesTableSummary);
+
+        function drawCountriesTableSummary() {
+            var gdata = google.visualization.arrayToDataTable(countries_table_summary);
+
+            var formatter = new google.visualization.NumberFormat(
+                { pattern: number_format });
+
+            formatter.format(gdata, 2);
+            formatter.format(gdata, 3);
+            formatter.format(gdata, 4);
+
+            var chart = new google.visualization.Table(document.getElementById('countries_mean_table_div'));
+
+            chart.draw(gdata, tableOptions);
+        }
+
+    </script>
+</head>
+<div id="countries_mean_table_div" style="width: 1300px; height: 900px;"></div>
+
+</html>

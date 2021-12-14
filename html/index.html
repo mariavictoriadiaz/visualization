@@ -1,0 +1,535 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/autofill/2.3.0/css/autoFill.foundation.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.0/css/colReorder.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.5/css/fixedColumns.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.4/css/fixedHeader.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/keytable/2.4.0/css/keyTable.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.0.3/css/rowGroup.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.4/css/rowReorder.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/1.5.0/css/scroller.foundation.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.6/css/select.foundation.min.css" />
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?sensor=false"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.18/js/dataTables.foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/autofill/2.3.0/js/dataTables.autoFill.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/autofill/2.3.0/js/autoFill.foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/colreorder/1.5.0/js/dataTables.colReorder.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.5/js/dataTables.fixedColumns.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.4/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/keytable/2.4.0/js/dataTables.keyTable.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.2/js/responsive.foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/rowgroup/1.0.3/js/dataTables.rowGroup.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/rowreorder/1.2.4/js/dataTables.rowReorder.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/scroller/1.5.0/js/dataTables.scroller.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/select/1.2.6/js/dataTables.select.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/r-2.2.1/datatables.min.css" />
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/r-2.2.1/datatables.min.js"></script>
+
+
+<script type="text/javascript" src="../js/species.js"></script>
+
+<script type="text/javascript" src="../js/colors.js"></script>
+<script type="text/javascript" src="../js/global.js"></script>
+<script type="text/javascript" src="../js/google_geochart_mean.js"></script>
+<script type="text/javascript" src="../js/google_geochart_insitu.js"></script>
+<script type="text/javascript" src="../js/google_geochart_exitu.js"></script>
+<script type="text/javascript" src="../js/google_geochart_taxanumber.js"></script>
+<script type="text/javascript" src="../js/google_barchart_uses.js"></script>
+<script type="text/javascript" src="../js/google_barchart_regions.js"></script>
+<script type="text/javascript" src="../js/species_countries.js"></script>
+<script type="text/javascript" src="../js/wordpress.js"></script>
+<script>
+	function myFunction() {
+	  document.getElementById("div").style.borderColor = "white";
+	}
+</script>
+
+<head>
+  
+    <style>
+		div {
+			 background-image: url('seeds.jpg');
+			 background-repeat: no-repeat;
+			 background-attachment: fixed;
+			 background-size: cover;
+			 background-blend-mode: overlay;
+			 background-color: rgba(255, 255, 255, 0.486);
+		}
+		
+				
+        h1 {
+            color: black;
+			text-shadow: 2px 2px white;
+        }
+		
+		h2 {
+            color: black;
+			text-shadow: 1px 1px white;
+        }
+          
+        label {
+            float: left;
+        }
+		          
+        span {
+            display: block;
+            overflow: hidden;
+            padding: 0px 4px 0px 6px;
+        }
+          
+        input {
+            width: 70%;
+        }
+		figcaption {
+		  font-size: 12px;
+		  color: black;
+		  text-align: center;
+		  height: auto;
+		  width:300px;
+		}
+    </style>
+</head>
+
+
+
+<body>
+	<div>
+	<br>
+    <h1 style="color:black; font-size:50px" align="center"><b> Estado de conservación de parientes silvestres</b></h1></label>
+    <br>
+	<h2 style="font-size:40px; color: black" align="center" ><b>¿Qué son?</b></h2>
+	<br>
+	<br>
+	</div>
+    
+	<br>
+	<p style="font-size:18px" align="center">Los parientes o plantas silvestres proporcionan a la humanidad alimentos, medicinas, refugio <br>  y muchas otras necesidades esenciales.</p> 
+	<figure>
+	<center><img src="cwr.jpg" alt="cwr" width="300" height="200">
+    <figcaption>The Crop Wild Relatives Project</figcaption>
+	</center>
+    </figure>
+	<br>
+	<br>
+
+	<div>
+	<br>
+	<h2 style="font-size:40px; color: black" align="center"><b>¿Cómo lo hacen?</b></h2>
+	<br>
+	</div>
+	
+	<br>
+	<p style="font-size:18px" align="center">Al ser depósitos de variación genética, se utilizan para la obtención de variedades de cultivos nuevas <br> o más resistentes a enfermedades o al impacto del cambio climático.</p>
+	<br>
+
+	<div>
+	<br>
+	<h2 style="font-size:40px; color: black" align="center"><b>¿Dónde se encuentran?</b></h2>
+	<br>
+	</div>	
+	
+	<br>
+	<p style="font-size:18px" align="center">En sus hábitats naturales, los parientes silvestres nunca salen de su entorno. </p>
+    <br>
+	<figure>
+	<center><img src="reserva.jpg" alt="Reservas naturales-Fundación ambiente Colombia" width="500" height="350">
+    <figcaption>Reservas naturales-Fundación ambiente Colombia</figcaption>
+	</center>
+    </figure>
+    <br>
+	<br>
+	
+	
+	
+	<div>
+	<br>	
+	<h2 style="font-size:40px; color: black" align="center">Pero muchas de las plantas están desapareciendo de sus hábitats naturales. ¿Qué hacemos?</h2>
+	<br>
+	</div>	
+
+	
+	<br>
+	<br>
+	<h2 style="font-size:18px; color: red" align="center" class="red-text"><b>NECESITAMOS ACCIÓN URGENTE EN PRO DE LA SEGURIDAD ALIMENTARIA DE LA HUMANIDAD</b></h2>
+    <br>
+	<p style="font-size:18px" align="center"> Se evaluaron casi <b>7.000</b> plantas silvestres diferentes para determinar en qué medida <br> se salvaguarda su diversidad en bancos de semillas, jardines botánicos y otros depósitos de conservación (ex situ), y<br> en qué medida los parques, reservas y otras áreas protegidas oficiales preservan sus poblaciones naturales (in situ).<br> A cada especie se le asignó una puntuación final entre <b>0 (mala)</b> y <b>100 (excelente)</b> en cuanto a su conservación actual. <br>Los resultados de todas las especies están disponibles más abajo en esta página.</p>
+	<br>
+	<p style="font-size:18px" align="center"> Desplácese a continuación para explorar los indicadores actuales de cómo se protegen estas plantas de estas amenazas.</p>
+    <br>
+		
+	<div>
+	<br>
+	<h1 style="color:black" align="center"><b>Presencia de parientes silvestres en el mundo</b></h1></label>
+	<br>
+	</div>
+			
+		
+	<br>
+	<div id="countries_taxa_div" style="width: 1200px; height: 900px; margin: 0 auto;"></div>
+	<br>
+	
+	<br>
+	<p style="font-size:18px" align="center"> Se han evaluado casi <b>7.000</b> plantas silvestres en todo el mundo. Este mapa muestra el <b> número de especies nativas de cada país </b>.<br> La escala varía de <b>1</b> (Andorra, Islas Malvinas, Gibraltar, Territorio Palestino e Islas Menores de los Estados Unidos) a <b>1947</b> (China),<br> con una mediana entre los países de <b>258</b></p>
+    <br>
+	
+	<div>
+	<br>
+	<br>
+	<h1 style="color:black" align="center"><b>Indicador global</b></h1></label>
+	<br>
+	<br>
+	</div>
+		
+	<br>
+	<br>
+    <br>	
+    <p style="font-size:18px" align="center"> Este indicador global muestra la proporción de <b>todas</b> estas especies en el <b>mundo</b> categorizadas como de <br><b>alta (puntuación de 0 a 25), media (puntuación de 25 a 50), baja (puntuación de 50 a 75)</b>, o <br><b>sin prioridad (puntuación de 75 a 100)</b> para un mayor trabajo de conservación, basándose en su <br>estado de conservación actual. Pase el cursor sobre el gráfico para ver la<br> proporción de especies en cada categoría. </p>
+	
+	<div id="bar_global_div" style="width: 1080px; height: 400px; margin: 0 auto;"></div>
+	
+	<br>
+	<br>	
+    <p style="font-size:18px" align="center">El indicador final del estado de conservación de estas plantas a nivel mundial se produjo calculando la proporción de <br>especies que fueron evaluadas como poco o nada prioritarias para un mayor trabajo de conservación<br> (es decir, la proporción de los gráficos que es de color verde).<br><br> Aproximadamente el <b>3,3%</b> de las especies fueron evaluadas como <b>bien conservadas</b> en la conservación <b>ex situ</b>, <br>y el <b>40,7%</b> en la conservación <b>in situ</b>. La métrica combinada del estado de conservación de todas las especies muestra que<br> menos de tres de cada 100 especies <b>(2,78%)</b> están <b>suficientemente conservadas o son de baja prioridad</b><br> para nuevas acciones de conservación. En la actualidad es necesario adoptar medidas urgentes <br>para mejorar la conservación de la diversidad de las especies de plantas silvestres del mundo. </p>
+    <br>
+
+	<div>
+	<br>
+	<h1 style="color:black" align="center"><b>Indicador de conservación media</b></h1></label>
+	<h2 style="color:black" align="center">Resultados por país</h2></label>
+	<br>
+	</div>
+	
+	
+	
+	<div id="countries_mean_div" style="width: 1200px; height: 900px; margin: 0 auto;"></div>
+	<br>	
+    <p style="font-size:18px" align="center">Las plantas silvestres de cada país se evaluaron conjuntamente para calcular una puntuación del estado de conservación a nivel nacional. <br>Pase el cursor por el mapa para ver la puntuación combinada (ex situ e in situ) del estado de conservación de cualquier país.<br><br> A cada especie se le asignó una puntuación final entre <b>0 (pobre)</b> y <b>100 (excelente)</b> en cuanto a su conservación actual.<br> La puntuación nacional es la proporción de estas especies que fueron evaluadas como suficientemente conservadas o <br>de baja prioridad para una mayor acción de conservación.</p>
+    <br>
+
+    <div>
+	<br>
+	<h1 style="color:black" align="center"><b>Indicador de conservación ex situ</b></h1></label>
+	<h2 style="color:black" align="center">Resultados por país</h2></label>
+	<br>
+	</div>
+	
+	
+	<div id="countries_exsitu_div" style="width: 1200px; height: 900px; margin: 0 auto;"></div>
+    <br>
+    <p style="font-size:18px" align="center">Las plantas silvestres de cada país se evaluaron conjuntamente para calcular una puntuación del<br> estado de conservación a nivel nacional. Pase el ratón por encima del mapa para ver los resultados a nivel nacional<br> con respecto al grado de protección de la diversidad de plantas nativas en bancos de semillas, jardines botánicos<br> y otros depósitos de conservación (ex situ).<br><br>A cada especie se le asignó una puntuación entre <b>0 (pobre)</b> y <b>100 (excelente)</b> en cuanto a su conservación actual ex situ.<br>La puntuación nacional es la proporción de estas especies que fueron evaluadas como suficientemente<br> conservadas o de baja prioridad para nuevas acciones de conservación ex situ.</p>
+    <br>
+	
+	
+    <div>
+	<br>
+	<h1 style="color:black" align="center"><b>Indicador de conservación in situ</b></h1></label>
+	<h2 style="color:black" align="center">Resultados por país</h2></label>
+	<br>
+	</div>
+	
+	
+	<div id="countries_insitu_div" style="width: 1200px; height: 900px; margin: 0 auto;"></div>
+    <br>
+    <p style="font-size:18px" align="center">Las plantas silvestres de cada país se evaluaron conjuntamente para calcular una puntuación del<br>  estado de conservación a nivel nacional. Pase el ratón por encima del mapa para ver los resultados a nivel nacional<br>  con respecto al grado de conservación de las poblaciones naturales de plantas nativas (in situ) en los parques, reservas y otras áreas protegidas oficiales.<br><br> A cada especie se le asignó una puntuación entre <b>0 (pobre)</b> y <b>100 (excelente)</b> en cuanto a su conservación actual in situ.<br>  La puntuación nacional es la proporción de estas especies que fueron evaluadas como suficientemente<br>  conservadas o de baja prioridad para una mayor acción de conservación in situ.</p>
+    <br>
+	
+	
+    <div>
+	<br>
+	<h1 style="color:black" align="center"><b> Regiones del mundo</b></h1></label>
+	<h2 style="color:black" align="center">Resultados del indicador por regiones del mundo</h2></label>
+	<br>
+	</div>
+	
+	<div id="bar_regions_div" style="width: 1080px; height: 1580px; margin: 0 auto;"></div>
+    <br>
+	<br>
+    <p style="font-size:18px" align="center">Las plantas silvestres nativas de cada región del mundo se evaluaron conjuntamente para calcular<br> una puntuación del estado de conservación a nivel regional. Esta figura muestra la proporción de especies nativas de <br>cada región clasificadas como de<b>alta (puntuación de 0 a 25)</b>,<b>media (puntuación de 25 a 50)</b>, <b>baja (puntuación de 50 a 75)</b> o <br><b>sin prioridad (puntuación de 75 a 100)</b> para un mayor trabajo de conservación, en función de <br>su estado de conservación actual. Pase el ratón por encima del gráfico para ver las puntuaciones de cada categoría. <br><br>El indicador final del estado de conservación de estas plantas a nivel regional se produjo calculando la proporción de<br> especies que fueron evaluadas como de baja o ninguna prioridad para un mayor trabajo de<br> conservación (es decir, la proporción de los gráficos que es de color verde).</p>	
+	<br>
+	
+	
+	<div>
+	<br>
+	<h1 style="color:black" align="center"><b> Usos de las plantas</b></h1></label>
+	<h2 style="color:black" align="center"> Resultados del indicador según sus usos culturales y socioeconómicos</h2></label>
+    <br>
+	</div>
+	
+	
+	<div id="bar_uses_div" style="width: 1080px; height: 1580px; margin: 0 auto;"></div>
+    <br>
+    <p style="font-size:18px" align="center">Las plantas silvestres utilizadas para diferentes fines se evaluaron para calcular una puntuación del estado de<br> conservación por categoría de uso. Este gráfico muestra la proporción de especies clasificadas como de <b>alta (puntuación de 0 a 25),<br> media (puntuación de 25 a 50), baja (puntuación de 50 a 75)</b> o <b>sin prioridad (puntuación de 75 a 100)</b> para un mayor trabajo de conservación, <br>en función de su estado de conservación actual. Pase el ratón por encima del gráfico para ver las puntuaciones de cada categoría.<br><br> El indicador final del estado de conservación de estas plantas por categoría de uso se produjo calculando la proporción de especies que<br> fueron evaluadas como de baja o ninguna prioridad para un mayor trabajo de conservación (es decir, la proporción de los gráficos que es de color verde).</p>
+    <br>
+	
+	
+	<div>
+	<br>
+	<p style="color:black; font-size:50px" align="center"><b> Resumen de resultados por especie</b></p></label>
+    <br>
+	</div>
+
+    <br>
+    <p style="font-size:18px" align="center">En esta tabla se ofrecen los resultados de las <b>6.941</b> especies evaluadas. Utilice la barra de búsqueda para encontrar <br>las especies que le interesan o descargue todos los resultados. Se proporciona el número de ocurrencias de referencia <b>(H para el herbario)</b>,<br>los registros ex situ <b>(G para el banco de genes)</b> y el número total de registros evaluados. La puntuación de la conservación <br>se proporciona por especie con respecto a la conservación ex situ, in situ y combinada (media de ex situ e in situ),<br> en una escala de <b>0 (mala) a 100 (excelente)</b>. La categoría de prioridad para cada especie <br>se asignó en base a la puntuación combinada, siendo la <b>prioridad alta (HP) una puntuación de 0 a 25</b>,<br> <b>media (MP) de 25 a 50</b>, <b>baja (LP) de 50 a 75</b>, o <b>suficientemente conservada (SC) con 75 a 100</b>. </p>	
+    <br>
+    <br>
+	<label for="species_search"><p style="color:black;font-size:17px">Filtre los resultados por especie:</p></label>
+	<span>
+		<input type="text" id="species_search", name = "species_search", style="width: 250px;" />
+	</span>
+	<select id="country_selector">
+        <option value="">Filtre los resultados por país</option>
+        <option value='AFG'>Afghanistan</option>
+        <option value='ALB'>Albania</option>
+        <option value='DZA'>Algeria</option>
+        <option value='AND'>Andorra</option>
+        <option value='AGO'>Angola</option>
+        <option value='AIA'>Anguilla</option>
+        <option value='ATG'>Antigua and Barbuda</option>
+        <option value='ARG'>Argentina</option>
+        <option value='ARM'>Armenia</option>
+        <option value='ABW'>Aruba</option>
+        <option value='AUS'>Australia</option>
+        <option value='AUT'>Austria</option>
+        <option value='AZE'>Azerbaijan</option>
+        <option value='BHS'>Bahamas</option>
+        <option value='BHR'>Bahrain</option>
+        <option value='BGD'>Bangladesh</option>
+        <option value='BRB'>Barbados</option>
+        <option value='BLR'>Belarus</option>
+        <option value='BEL'>Belgium</option>
+        <option value='BLZ'>Belize</option>
+        <option value='BEN'>Benin</option>
+        <option value='BMU'>Bermuda</option>
+        <option value='BTN'>Bhutan</option>
+        <option value='BOL'>Bolivia - Plurinational State of </option>
+        <option value='BIH'>Bosnia and Herzegovina</option>
+        <option value='BWA'>Botswana</option>
+        <option value='BRA'>Brazil</option>
+        <option value='VGB'>British Virgin Islands</option>
+        <option value='BRN'>Brunei Darussalam</option>
+        <option value='BGR'>Bulgaria</option>
+        <option value='BFA'>Burkina Faso</option>
+        <option value='BDI'>Burundi</option>
+        <option value='CPV'>Cabo Verde</option>
+        <option value='KHM'>Cambodia</option>
+        <option value='CMR'>Cameroon</option>
+        <option value='CAN'>Canada</option>
+        <option value='CYM'>Cayman Islands</option>
+        <option value='CAF'>Central African Republic</option>
+        <option value='TCD'>Chad</option>
+        <option value='CHL'>Chile</option>
+        <option value='CHN'>China</option>
+        <option value='HKG'>China Hong Kong Special Administrative Region</option>
+        <option value='MAC'>China Macao Special Administrative Region</option>
+        <option value='CXR'>Christmas Island</option>
+        <option value='CCK'>Cocos - Keeling Islands</option>
+        <option value='COL'>Colombia</option>
+        <option value='COM'>Comoros</option>
+        <option value='COG'>Congo</option>
+        <option value='COK'>Cook Islands</option>
+        <option value='CRI'>Costa Rica</option>
+        <option value='CIV'>Côte d'Ivoire</option>
+        <option value='HRV'>Croatia</option>
+        <option value='CUB'>Cuba</option>
+        <option value='CYP'>Cyprus</option>
+        <option value='CZE'>Czechia</option>
+        <option value='PRK'>Democratic People's Republic of Korea</option>
+        <option value='COD'>Democratic Republic of the Congo</option>
+        <option value='DNK'>Denmark</option>
+        <option value='DJI'>Djibouti</option>
+        <option value='DMA'>Dominica</option>
+        <option value='DOM'>Dominican Republic</option>
+        <option value='ECU'>Ecuador</option>
+        <option value='EGY'>Egypt</option>
+        <option value='SLV'>El Salvador</option>
+        <option value='GNQ'>Equatorial Guinea</option>
+        <option value='ERI'>Eritrea</option>
+        <option value='EST'>Estonia</option>
+        <option value='ETH'>Ethiopia</option>
+        <option value='FLK'>Falkland Islands - Malvinas</option>
+        <option value='FRO'>Faroe Islands</option>
+        <option value='FJI'>Fiji</option>
+        <option value='FIN'>Finland</option>
+        <option value='FRA'>France</option>
+        <option value='GUF'>French Guiana</option>
+        <option value='PYF'>French Polynesia</option>
+        <option value='GAB'>Gabon</option>
+        <option value='GMB'>Gambia</option>
+        <option value='GEO'>Georgia</option>
+        <option value='DEU'>Germany</option>
+        <option value='GHA'>Ghana</option>
+        <option value='GIB'>Gibraltar</option>
+        <option value='GRC'>Greece</option>
+        <option value='GRL'>Greenland</option>
+        <option value='GRD'>Grenada</option>
+        <option value='GLP'>Guadeloupe</option>
+        <option value='GUM'>Guam</option>
+        <option value='GTM'>Guatemala</option>
+        <option value='GIN'>Guinea</option>
+        <option value='GNB'>Guinea-Bissau</option>
+        <option value='GUY'>Guyana</option>
+        <option value='HTI'>Haiti</option>
+        <option value='HND'>Honduras</option>
+        <option value='HUN'>Hungary</option>
+        <option value='ISL'>Iceland</option>
+        <option value='IND'>India</option>
+        <option value='IDN'>Indonesia</option>
+        <option value='IRN'>Iran - Islamic Republic of</option>
+        <option value='IRQ'>Iraq</option>
+        <option value='IRL'>Ireland</option>
+        <option value='ISR'>Israel</option>
+        <option value='ITA'>Italy</option>
+        <option value='JAM'>Jamaica</option>
+        <option value='JPN'>Japan</option>
+        <option value='JOR'>Jordan</option>
+        <option value='KAZ'>Kazakhstan</option>
+        <option value='KEN'>Kenya</option>
+        <option value='KIR'>Kiribati</option>
+        <option value='KWT'>Kuwait</option>
+        <option value='KGZ'>Kyrgyzstan</option>
+        <option value='LAO'>Lao People's Democratic Republic</option>
+        <option value='LVA'>Latvia</option>
+        <option value='LBN'>Lebanon</option>
+        <option value='LSO'>Lesotho</option>
+        <option value='LBR'>Liberia</option>
+        <option value='LBY'>Libya</option>
+        <option value='LIE'>Liechtenstein</option>
+        <option value='LTU'>Lithuania</option>
+        <option value='LUX'>Luxembourg</option>
+        <option value='MDG'>Madagascar</option>
+        <option value='MWI'>Malawi</option>
+        <option value='MYS'>Malaysia</option>
+        <option value='MDV'>Maldives</option>
+        <option value='MLI'>Mali</option>
+        <option value='MLT'>Malta</option>
+        <option value='MHL'>Marshall Islands</option>
+        <option value='MTQ'>Martinique</option>
+        <option value='MRT'>Mauritania</option>
+        <option value='MUS'>Mauritius</option>
+        <option value='MEX'>Mexico</option>
+        <option value='FSM'>Micronesia - Federated States of</option>
+        <option value='MNG'>Mongolia</option>
+        <option value='MNE'>Montenegro</option>
+        <option value='MSR'>Montserrat</option>
+        <option value='MAR'>Morocco</option>
+        <option value='MOZ'>Mozambique</option>
+        <option value='MMR'>Myanmar</option>
+        <option value='NAM'>Namibia</option>
+        <option value='NRU'>Nauru</option>
+        <option value='NPL'>Nepal</option>
+        <option value='NLD'>Netherlands</option>
+        <option value='ANT'>Netherlands Antilles</option>
+        <option value='NCL'>New Caledonia</option>
+        <option value='NZL'>New Zealand</option>
+        <option value='NIC'>Nicaragua</option>
+        <option value='NER'>Niger</option>
+        <option value='NGA'>Nigeria</option>
+        <option value='NIU'>Niue</option>
+        <option value='MNP'>Northern Mariana Islands</option>
+        <option value='NOR'>Norway</option>
+        <option value='OMN'>Oman</option>
+        <option value='PAK'>Pakistan</option>
+        <option value='PLW'>Palau</option>
+        <option value='PAN'>Panama</option>
+        <option value='PNG'>Papua New Guinea</option>
+        <option value='PRY'>Paraguay</option>
+        <option value='PER'>Peru</option>
+        <option value='PHL'>Philippines</option>
+        <option value='PCN'>Pitcairn</option>
+        <option value='POL'>Poland</option>
+        <option value='PRT'>Portugal</option>
+        <option value='PRI'>Puerto Rico</option>
+        <option value='QAT'>Qatar</option>
+        <option value='KOR'>Republic of Korea</option>
+        <option value='MDA'>Republic of Moldova</option>
+        <option value='REU'>Réunion</option>
+        <option value='ROU'>Romania</option>
+        <option value='RUS'>Russian Federation</option>
+        <option value='RWA'>Rwanda</option>
+        <option value='SHN'>Saint Helena</option>
+        <option value='KNA'>Saint Kitts and Nevis</option>
+        <option value='LCA'>Saint Lucia</option>
+        <option value='SPM'>Saint Pierre and Miquelon</option>
+        <option value='VCT'>Saint Vincent and the Grenadines</option>
+        <option value='WSM'>Samoa</option>
+        <option value='STP'>Sao Tome and Principe</option>
+        <option value='SAU'>Saudi Arabia</option>
+        <option value='SEN'>Senegal</option>
+        <option value='SRB'>Serbia</option>
+        <option value='SYC'>Seychelles</option>
+        <option value='SLE'>Sierra Leone</option>
+        <option value='SGP'>Singapore</option>
+        <option value='SVK'>Slovakia</option>
+        <option value='SVN'>Slovenia</option>
+        <option value='SLB'>Solomon Islands</option>
+        <option value='SOM'>Somalia</option>
+        <option value='ZAF'>South Africa</option>
+        <option value='SSD'>South Sudan</option>
+        <option value='ESP'>Spain</option>
+        <option value='LKA'>Sri Lanka</option>
+        <option value='PSE'>State of Palestine</option>
+        <option value='SDN'>Sudan</option>
+        <option value='SUR'>Suriname</option>
+        <option value='SJM'>Svalbard and Jan Mayen Islands</option>
+        <option value='SWZ'>Swaziland</option>
+        <option value='SWE'>Sweden</option>
+        <option value='CHE'>Switzerland</option>
+        <option value='SYR'>Syrian Arab Republic</option>
+        <option value='TJK'>Tajikistan</option>
+        <option value='THA'>Thailand</option>
+        <option value='MKD'>The former Yugoslav Republic of Macedonia</option>
+        <option value='TLS'>Timor-Leste</option>
+        <option value='TGO'>Togo</option>
+        <option value='TON'>Tonga</option>
+        <option value='TTO'>Trinidad and Tobago</option>
+        <option value='TUN'>Tunisia</option>
+        <option value='TUR'>Turkey</option>
+        <option value='TKM'>Turkmenistan</option>
+        <option value='TCA'>Turks and Caicos Islands</option>
+        <option value='TWN'>Tuvalu</option>
+        <option value='UGA'>Uganda</option>
+        <option value='UKR'>Ukraine</option>
+        <option value='ARE'>United Arab Emirates</option>
+        <option value='GBR'>United Kingdom of Great Britain and Northern Ireland</option>
+        <option value='TZA'>United Republic of Tanzania</option>
+        <option value='UMI'>United States Minor Outlying Islands</option>
+        <option value='USA'>United States of America</option>
+        <option value='VIR'>United States Virgin Islands</option>
+        <option value='URY'>Uruguay</option>
+        <option value='UZB'>Uzbekistan</option>
+        <option value='VUT'>Vanuatu</option>
+        <option value='VEN'>Venezuela - Bolivarian Republic of</option>
+        <option value='VNM'>Viet Nam</option>
+        <option value='WLF'>Wallis and Futuna Islands</option>
+        <option value='ESH'>Western Sahara</option>
+        <option value='YEM'>Yemen</option>
+        <option value='ZMB'>Zambia</option>
+        <option value='ZWE'>Zimbabwe</option>
+
+    </select>
+	<table id="species_table" class="display" style="width:100%;height: 400px; margin: 0 auto; "> </table>
+	<a href="#" class="previous round" style="width:100%;">&#8249;</a>
+	<a href="#" class="next round" style="width:100%;">&#8250;</a>
+
+
+
+	
+</body>
